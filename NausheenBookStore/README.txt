@@ -23,6 +23,6 @@
  1115
  - cloned the app into machine
  - removed the options from Startup.cs (line 33)
- - ran the application
- - everything works.
+ - built and ran the application
+ - everything works
  - push to github
