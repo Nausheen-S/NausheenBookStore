@@ -45,3 +45,27 @@
  - tested it
  - learnt how breakpoints work
  - push changes to GitHub
+
+ 1024
+ - pushed changes to GitHub
+ - starting part 1.3, that is adding Bootstrap theme
+
+
+ 1043
+ - selected the darkly theme for project
+ - downloaded the bootstrap.css file 
+ - made necessary changes to other files
+ - ran the project to check
+ - everything works well
+
+ 1053
+ - added additional third part app links
+ - refer _Layout.cshtml file
+
+ 1110
+ - added dropdown link in _Layout.cshtml file
+ - tested the app
+ - the changes are reflected
+ - however, the dropdown menu does not open yet. need to fixt it
+ - need to start part 1.4
+ - push changes to github first
