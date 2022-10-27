@@ -42,7 +42,8 @@ namespace NausheenBookStore
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                //app.UseDatabaseErrorPage();//configuring for HTTP Pipeline
+                app.UseMigrationsEndPoint();
             }
             else
             {

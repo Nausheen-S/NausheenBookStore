@@ -36,3 +36,12 @@
  1002
  - ran the app. everything works fine.
  - let's create README.MD (overview readme) before continuing
+
+ 1017
+ - In Startup.cs, set up the HTTP Pipeline (changed Line 45)
+
+ 1023
+ - tried debugging by adding breakpoint
+ - tested it
+ - learnt how breakpoints work
+ - push changes to GitHub
