@@ -26,3 +26,13 @@
  - built and ran the application
  - everything works
  - push to github
+
+ 2022-10-27
+ 1000
+ - continuing work on assignment 2 part 1.
+ - got all updated changes from GitHub remote
+ - begin by building and running app to check.
+
+ 1002
+ - ran the app. everything works fine.
+ - let's create README.MD (overview readme) before continuing
