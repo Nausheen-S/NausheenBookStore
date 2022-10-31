@@ -69,3 +69,37 @@
  - however, the dropdown menu does not open yet. need to fixt it
  - need to start part 1.4
  - push changes to github first
+
+ 2022-10-31
+ 1444
+- pulled changes from GitHub.
+- Build the app and test it
+
+1445
+- Tested the app. Everything works well
+- now need to continue from part 1.4
+- but before that, refactor the nav to make the dropdown work
+
+1454
+- the dropdown works but does not open. need to check, probably needs content
+- now starting part 1.4
+
+1511
+- Added EFCore Relation Package
+- Deleted the Migrations folder
+
+1515
+- The EF Identity Framework package already exists
+- changed namespace in ApplicationDbContext.cs in Data Folder
+- No class1.cs files found
+
+1532
+- made a mistake. created folder instead of class library
+- corrected mistake
+- created three new class libraries with the relevant folders
+- deleting defualt class1.cs files
+
+1540
+- have some errors when building despite installing packages
+- will look into that later
+
