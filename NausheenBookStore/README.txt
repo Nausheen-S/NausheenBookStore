@@ -140,3 +140,10 @@
 1058
 - added new static file
 - push to GitHub first and then continue
+
+1100
+- added project referenceslets build and test before proceeding
+
+1101
+- all works well.
+- lets push to GitHub before continuing
