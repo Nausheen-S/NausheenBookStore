@@ -172,3 +172,13 @@
 - need to move to next part
 - push to GitHub irst
 - ToDo: fix Dropdown
+
+1145
+- cloned app to laptop
+- build and test app
+- will then continue
+
+1154
+- the app works in customer path
+- yet to work in regular path
+- push to GitHub first
