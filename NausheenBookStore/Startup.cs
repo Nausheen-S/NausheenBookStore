@@ -64,9 +64,13 @@ namespace NausheenBookStore
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    /*pattern: "{controller=Home}/{action=Index}/{id?}");*/
+                    //adding routes to accomodate areas
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+           
+           
         }
     }
 }

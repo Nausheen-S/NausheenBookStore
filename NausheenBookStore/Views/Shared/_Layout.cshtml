@@ -43,13 +43,14 @@
                         </li>
                         <!--added a new dropdown menu-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" asp-area="" asp-controller="Home" asp-action="Index" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
                                 Content Management
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <!--changed href to asp reference-->
+                                <li><a class="dropdown-item"  asp-area="" asp-controller="Home" asp-action="Index" >Action</a></li>
+                                <li><a class="dropdown-item"  asp-area="" asp-controller="Home" asp-action="Index">Another action</a></li>
+                                <li><a class="dropdown-item"  asp-area="" asp-controller="Home" asp-action="Index">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>

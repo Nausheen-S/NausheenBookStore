@@ -147,3 +147,9 @@
 1101
 - all works well.
 - lets push to GitHub before continuing
+
+1118
+- added area
+- also changed startup file
+- moved homecontroller file
+- push to GitHub before continuing
