@@ -228,3 +228,8 @@
 - tested app, works fine
 - will now push to GitHub
 - end of part 1
+
+1529
+- made updates to README.md file.
+- will push these changes too.
+- now end of part 1
