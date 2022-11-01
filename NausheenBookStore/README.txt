@@ -182,3 +182,19 @@
 - the app works in customer path
 - yet to work in regular path
 - push to GitHub first
+
+1229
+- route finally works
+- added endpoint to startup properly
+- To Do: adding new admin are, and dropdown correction
+
+1236
+- have checked app and pushed changes to repo
+- will now continue to try dropdown
+
+1259
+- dropdown finally works
+- issue with attribute value
+- ran the app, everything works well
+- push to GitHub
+- last part is to create another area
