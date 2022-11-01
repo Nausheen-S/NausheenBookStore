@@ -203,3 +203,8 @@
 - moved viewimport file to view folder. was in customer folder
 - app works fine
 - push to GitHub
+
+0110
+- added admin area
+- push to GitHub
+- will work on this later
