@@ -208,3 +208,18 @@
 - added admin area
 - push to GitHub
 - will work on this later
+
+1507
+- starting work again
+- first build and test app
+
+1508
+- tested app, everything works well
+- now continue with last part
+
+1513
+- added files to admin/views
+- deleted the unrequired folders
+-tested app, works fine
+- will now push to GitHub
+- end of part 1
