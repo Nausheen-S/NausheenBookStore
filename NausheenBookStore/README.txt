@@ -125,3 +125,18 @@
 - need to correct dropdown
 - will first push to GitHub
 
+1055
+- something went wrong. had to delete local copy and clone again
+- will build app first
+
+1056
+- fixed build erros by referencing model file correctly
+- now run app
+
+1057
+- everything runs fine
+- will now continue working with utility class libary
+
+1058
+- added new static file
+- push to GitHub first and then continue
