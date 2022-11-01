@@ -198,3 +198,8 @@
 - ran the app, everything works well
 - push to GitHub
 - last part is to create another area
+
+0108
+- moved viewimport file to view folder. was in customer folder
+- app works fine
+- push to GitHub
