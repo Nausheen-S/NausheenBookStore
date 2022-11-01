@@ -103,3 +103,25 @@
 - have some errors when building despite installing packages
 - will look into that later
 
+2022-11-01
+0930
+- Strarting again
+- Cloned application into collge system.
+- Built it. got build errors.
+- Need to figure those
+
+0945
+- updated the required classes
+- need to figure out errors
+- need to update Error.cshtml file
+
+0959
+- got the error, the packages were installed in the wrong folder
+- installed the packages and changed namespaces in all folders
+- also changed folder names
+
+1005
+- still need to change error.cshtml
+- need to correct dropdown
+- will first push to GitHub
+

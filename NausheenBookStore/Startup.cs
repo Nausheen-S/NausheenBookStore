@@ -7,11 +7,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using NausheenBookStore.Data;
+//using NausheenBookStore.Data; remove this since path is dataaccess.data
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using NausheenBookStore.DataAccess.Data; //added new 
 
 namespace NausheenBookStore
 {

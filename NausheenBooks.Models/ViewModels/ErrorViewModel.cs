@@ -1,6 +1,7 @@
 using System;
 
-namespace NausheenBookStore.Models
+//changed namespace to creference the correct project
+namespace NausheenBookStore.Models.ViewModels
 {
     public class ErrorViewModel
     {
