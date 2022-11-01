@@ -161,3 +161,14 @@
 1130
 - moved view folder
 - lets push to GiHub and try to run app
+
+1138
+- the app does not run now
+- need to fix it
+
+
+1140
+- app works. had to change the route
+- need to move to next part
+- push to GitHub irst
+- ToDo: fix Dropdown
