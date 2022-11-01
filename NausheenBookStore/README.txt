@@ -222,4 +222,9 @@
 - deleted the unrequired folders
 -tested app, works fine
 - will now push to GitHub
+
+1524
+- changed content of view pages
+- tested app, works fine
+- will now push to GitHub
 - end of part 1
