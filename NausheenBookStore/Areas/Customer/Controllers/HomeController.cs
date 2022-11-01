@@ -7,8 +7,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NausheenBookStore.Controllers
+namespace NausheenBookStore.Area.Customer.Controllers
 {
+    //added reference
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

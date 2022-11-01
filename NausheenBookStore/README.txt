@@ -153,3 +153,11 @@
 - also changed startup file
 - moved homecontroller file
 - push to GitHub before continuing
+
+1121
+- changed are name to customer
+- also added customer are reference in controller
+
+1130
+- moved view folder
+- lets push to GiHub and try to run app
