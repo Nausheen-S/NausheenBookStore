@@ -1,7 +1,7 @@
 # NausheenBookStore
 
 ## Project Goal:
-- To create an ASP.NET MVC project to along with Areas.
+- To create an ASP.NET core project along with Areas.
 - Created as part of academic requirement for the WEB452 Class at St. Clair College.
 
 ## Technology Used:
@@ -9,7 +9,7 @@
  
 ## For More Information:
 - to know more on how this project was built, please refer the detailed readme. 
-- Link to detailed [README.txt](https://github.com/NausheenSalauddin/LegacyView/blob/master/LegacyView/README.txt).
+- Link to detailed [README.txt](https://github.com/NausheenSalauddin/NausheenBookStore/blob/master/NausheenBookStore/README.txt).
 
 ## Deployed Project:
  - The project will be deployed using Microsoft Azure.
