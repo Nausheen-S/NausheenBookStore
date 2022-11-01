@@ -59,14 +59,20 @@ namespace NausheenBookStore
 
             app.UseAuthentication();
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
+            
+                app.UseEndpoints(endpoints =>
             {
+                //added endpoint for areas
+                endpoints.MapAreaControllerRoute(
+      name: "Areas",
+      areaName: "Customer",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
                 endpoints.MapControllerRoute(
                     name: "default",
-                    /*pattern: "{controller=Home}/{action=Index}/{id?}");*/
-                    //adding routes to accomodate areas
-                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                  pattern: "{controller=Home}/{action=Index}/{id?}");
+        //adding routes to accomodate areas
+        /*pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");*/
                 endpoints.MapRazorPages();
             });
            
