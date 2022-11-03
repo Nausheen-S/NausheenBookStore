@@ -233,3 +233,19 @@
 - made updates to README.md file.
 - will push these changes too.
 - now end of part 1
+
+2022-11-03
+1029
+- completed the correction of part 1
+- now starting part 2
+- first build the solution before beginning
+
+1037
+- built and tested app
+- everything works well
+- now begin part 2
+
+1041
+- created a new migration called addDefaultIdentityMigration
+- first push to GitHub before continuing
+
