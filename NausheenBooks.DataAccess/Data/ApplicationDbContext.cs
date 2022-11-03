@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using NausheenBooks.Models; //added using statement
 
 //changed the namespace to properly reflect project
 namespace NausheenBookStore.DataAccess.Data
@@ -13,5 +14,7 @@ namespace NausheenBookStore.DataAccess.Data
             : base(options)
         {
         }
+        //adding new dbcontext for categories
+        public DbSet<Category> Categories { get; set; }
     }
 }

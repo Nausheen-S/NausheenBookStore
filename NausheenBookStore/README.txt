@@ -261,3 +261,13 @@
 - added the migration
 - push to GitHub before continuing
 
+1104
+- added application db context
+- will now add the migration again
+
+1106
+- added the migration
+- also updated the database
+- checked the new categories table
+- now push to GitHub
+
