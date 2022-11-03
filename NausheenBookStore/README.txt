@@ -271,3 +271,14 @@
 - checked the new categories table
 - now push to GitHub
 
+1108
+- pushed all changes and checked the app
+- all works well
+- will now begin part 2.2
+
+1113
+- added two new folders
+- and also added interface
+- need to modify the interface
+- lets first push to GitHub
+
