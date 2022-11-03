@@ -249,3 +249,15 @@
 - created a new migration called addDefaultIdentityMigration
 - first push to GitHub before continuing
 
+1044
+- pushed to GitHub
+- also updated the database
+- built and tested app
+- runs without errors
+- now continue with app
+
+1058
+- added new table by creating model class
+- added the migration
+- push to GitHub before continuing
+
