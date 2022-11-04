@@ -302,3 +302,13 @@
 - now need to add repos for individual models
 - first push to GitHub and continue
 
+1518
+- previously stopped at implementing interface
+- build and continue now
+
+1543
+- added repo for category
+ran with issue where base interface was less accessible than sub class
+- corrected it by making base class interface public - check irepo..
+- will now build and push to github
+

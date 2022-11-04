@@ -7,8 +7,8 @@ using System.Linq.Expressions;
 
 namespace NausheenBooks.DataAccess.Repository.IRepository
 {
-    //added information regarding irepository
-    interface IRepository<T> where T : class
+    //added information regarding irepository . make sure to keep public to avoid accessibility errors
+    public interface IRepository<T> where T : class
     {
         //get category based on id
         T Get(int CategoryId);
