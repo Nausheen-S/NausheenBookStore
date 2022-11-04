@@ -308,7 +308,16 @@
 
 1543
 - added repo for category
-ran with issue where base interface was less accessible than sub class
+- ran with issue where base interface was less accessible than sub class
 - corrected it by making base class interface public - check irepo..
 - will now build and push to github
+
+1547
+- pushed to github
+- now continuing
+
+1622
+- implementing the interface ISP_call
+- need to implement some more methods
+- first push to github
 
