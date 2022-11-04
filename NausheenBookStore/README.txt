@@ -285,3 +285,20 @@
 1117
 - will continue with this work later. push to GitHub one more time
 
+2022-11-04
+1147
+- starting to continue work on project
+- pulled all changes from github
+- first build and test app
+
+1149
+- built and tested app
+- everything works well
+- will now continue work with part 2.2
+
+
+1236
+- added content to repository folder and implemented interface
+- now need to add repos for individual models
+- first push to GitHub and continue
+
