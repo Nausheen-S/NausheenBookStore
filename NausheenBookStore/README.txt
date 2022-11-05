@@ -321,3 +321,18 @@
 - need to implement some more methods
 - first push to github
 
+2022-11-05
+1836
+- starting work on project again
+- pulled changes from github
+- now build and run app to test
+
+1837
+- built and tested app
+- works fine
+- now continue
+
+1849
+- added the rest of interface implementation
+- need to add wrapper
+- first push to repo
