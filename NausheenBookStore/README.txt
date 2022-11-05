@@ -345,3 +345,12 @@
 - have an issue with iunit in Startup, asks to change to unit. need to check, ask in class
 - build and push to github
 - next start part 2.3
+
+1911
+- pushed to github, begin 2.3
+
+1954
+- doing part 2.3
+- added view. need to add code
+- first push to GitHub
+- Issue in Startup still needs to be verified.

@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using NausheenBookStore.DataAccess.Data; //added new 
 using NausheenBooks.DataAccess.Repository;
 using NausheenBooks.DataAccess.Repository.IRepository; //adding using statements
+using Abp.Domain.Uow;
 
 namespace NausheenBookStore
 {
