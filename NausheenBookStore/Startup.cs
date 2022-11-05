@@ -13,6 +13,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using NausheenBookStore.DataAccess.Data; //added new 
+using NausheenBooks.DataAccess.Repository;
+using NausheenBooks.DataAccess.Repository.IRepository; //adding using statements
 
 namespace NausheenBookStore
 {
@@ -33,6 +35,8 @@ namespace NausheenBookStore
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>() //removed the options: options => options.SignIn.RequireConfirmedAccount = true
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            //adding interface reference
+            services.AddScoped<UnitOfWork, UnitOfWork>(); //check if IUnit or Unit
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
