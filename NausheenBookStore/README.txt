@@ -354,3 +354,18 @@
 - added view. need to add code
 - first push to GitHub
 - Issue in Startup still needs to be verified.
+
+2147
+- complete the view
+
+2159
+- completed view and tested app
+- everything works
+- also resolved th iunit error in Startup..had missed inheritance
+- font awesome doesn't work
+- need to check link
+
+2202
+- updated font awesome link
+- now works
+- push to github before continuing

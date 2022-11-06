@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 using NausheenBookStore.DataAccess.Data; //added new 
 using NausheenBooks.DataAccess.Repository;
 using NausheenBooks.DataAccess.Repository.IRepository; //adding using statements
-using Abp.Domain.Uow;
+
 
 namespace NausheenBookStore
 {
@@ -37,7 +37,7 @@ namespace NausheenBookStore
             services.AddDefaultIdentity<IdentityUser>() //removed the options: options => options.SignIn.RequireConfirmedAccount = true
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             //adding interface reference
-            services.AddScoped<UnitOfWork, UnitOfWork>(); //check if IUnit or Unit
+            services.AddScoped<IUnitOfWork, UnitOfWork>(); //check if IUnit or Unit - error resolved after implementing inheritence in unitofwork class
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -69,9 +69,15 @@ namespace NausheenBookStore
             {
                 //added endpoint for areas
                 endpoints.MapAreaControllerRoute(
-      name: "Areas",
-      areaName: "Customer",
-      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                  name: "Areas",
+                  areaName: "Customer",
+                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                //admin
+                endpoints.MapAreaControllerRoute(
+                 name: "Areas",
+                 areaName: "Admin",
+                 pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
                 endpoints.MapControllerRoute(
                     name: "default",
