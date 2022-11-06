@@ -369,3 +369,10 @@
 - updated font awesome link
 - now works
 - push to github before continuing
+
+2206
+- added category link in nav
+- checked app, works
+- push to github
+- stopping for now
+- to continue with modifying layout
