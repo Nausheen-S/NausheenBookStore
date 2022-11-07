@@ -1,5 +1,5 @@
-﻿@model NausheenBooks.Models.Category; 
-    @*add reference*@
+﻿@model NausheenBooks.Models.Category;
+@*add reference*@
 @{
     ViewData["Title"] = "Upsert";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,7 +8,7 @@
 <form method="post">
     <div class="row p-3 border">
         <div class="col-12 border-bottom">
-            <h2 class="text-primary">TITLE</h2>
+            <h2 class="text-primary">Title</h2>
         </div>
         <div class="col-8 pt-4">
             <div class="form-group row">
@@ -23,10 +23,22 @@
             </div>
             <div class="form-group row">
                 <div class="col-8 offset-4">
-                    
+                    @if (Model.CategoryId != 0)
+                    {
+                        <partial name="_EditAndBackToListButton" model="Model.CategoryId" />
+                    }
+                    else
+                    {
+                        <partial name="_CreateAndBackToListButton" />
+                    }
                 </div>
             </div>
         </div>
     </div>
 </form>
+
+@*adding script for validation*@
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
 

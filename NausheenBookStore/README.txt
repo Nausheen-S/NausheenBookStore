@@ -400,3 +400,13 @@
 - added views for edit and create
 - will continue later
 - push to repo
+
+1235
+- starting again now
+- first build and then continue
+
+1249
+- updated the upsert
+- NEED TO CHECK IN CLASS - what is the title variable in upsert?
+- everything else works
+- push to github then continue
