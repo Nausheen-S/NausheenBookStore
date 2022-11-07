@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using NausheenBooks.DataAccess.Repository.IRepository;
 using NausheenBookStore.DataAccess.Data;//add using statement
-
+using NausheenBooks.Models; //added for upsert
 
 namespace NausheenBookStore.Areas.Admin.Controllers
 {
@@ -21,6 +21,24 @@ namespace NausheenBookStore.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+            return View();
+        }
+
+        //add upsert func
+        public IActionResult Upsert(int? id)
+        {
+            Category category = new Category();
+            if(id == null)
+            {
+                //create
+                return View(category);
+            }
+            //for edit
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if(category == null)
+            {
+                return NotFound();
+            }
             return View();
         }
 

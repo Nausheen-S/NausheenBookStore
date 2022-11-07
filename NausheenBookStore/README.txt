@@ -391,3 +391,12 @@
 - added edit and delete icons and script.
 - need to activate it
 - push to repo first
+
+1101
+- done pushing
+- now continue
+
+1125
+- added views for edit and create
+- will continue later
+- push to repo
