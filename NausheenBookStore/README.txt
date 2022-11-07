@@ -376,3 +376,18 @@
 - push to github
 - stopping for now
 - to continue with modifying layout
+
+2022-11-07
+1043
+- Starting work again
+- pulled changes
+- first buld and test app
+
+1044
+- looks good
+- continue work
+
+1059
+- added edit and delete icons and script.
+- need to activate it
+- push to repo first
