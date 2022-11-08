@@ -410,3 +410,19 @@
 - NEED TO CHECK IN CLASS - what is the title variable in upsert?
 - everything else works
 - push to github then continue
+
+2022-11-08
+0839
+- starting work on project again
+- pulled all changes
+- now need to build app and test it
+
+0845
+- checked. all works fine
+- now continue with work
+
+0856
+- figured out title variable problem
+- was missing the variable. added it
+- app works
+- push to github befor continuing
