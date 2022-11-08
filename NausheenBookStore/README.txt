@@ -457,3 +457,9 @@
 - added delete function
 - will first push to github
 - then build and test
+
+0950
+- no build errors
+- still cannot add categories though
+- need to check that, looks like code missing in respository interface implementation
+- will push to github and also update the links to tastr and datatable
