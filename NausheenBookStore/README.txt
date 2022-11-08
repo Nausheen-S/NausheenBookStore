@@ -468,3 +468,7 @@
 - updated links
 - build and test app
 - push to repo
+
+0956
+- todo: figure out why create does not work
+- everything else done in part 2
