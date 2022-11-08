@@ -475,5 +475,6 @@
 
 1031
 - checked in class, looks like I am missing the implementation for add method
+- get a not implemented exception
 - will email Andrew the problem and ask for solutions
 - now push this to github
