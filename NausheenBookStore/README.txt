@@ -246,7 +246,7 @@
 - now begin part 2
 
 1041
-- created a new migration called addDefaultIdentityMigration
+- created a new migration called addDefaultIdentityMigration - 20221103144055_addDefaultIdentityMigration
 - first push to GitHub before continuing
 
 1044
@@ -472,3 +472,8 @@
 0956
 - todo: figure out why create does not work
 - everything else done in part 2
+
+1031
+- checked in class, looks like I am missing the implementation for add method
+- will email Andrew the problem and ask for solutions
+- now push this to github
