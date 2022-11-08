@@ -452,3 +452,8 @@
 - added delete functionality
 - need to write delete function
 - push to repo first
+
+0948
+- added delete function
+- will first push to github
+- then build and test
