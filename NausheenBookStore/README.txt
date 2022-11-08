@@ -435,4 +435,20 @@
 - added the post method
 - no builf=d errors
 - but need to update the category repository
-- first oush to repo then continue
+- first push to repo then continue
+
+0921
+- starting again in college sys
+- pulled changes from repo
+- now build start again
+
+0931
+- added the changes
+- still get method not implemented error
+- NEED TO CHECK
+- will continue for now
+
+0945
+- added delete functionality
+- need to write delete function
+- push to repo first
