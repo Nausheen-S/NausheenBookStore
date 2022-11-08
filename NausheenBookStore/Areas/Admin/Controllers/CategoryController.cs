@@ -42,6 +42,29 @@ namespace NausheenBookStore.Areas.Admin.Controllers
             return View();
         }
 
+        //http post here
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public IActionResult Upsert(Category category)
+        {
+            if(ModelState.IsValid)
+            {
+                if(category.CategoryId == 0)
+                {
+                    _unitOfWork.Category.Add(category);
+                }
+                else
+                {
+                    _unitOfWork.Category.Update(category);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(category);
+        }
+
+
         //API Calls here
         [HttpGet]
 

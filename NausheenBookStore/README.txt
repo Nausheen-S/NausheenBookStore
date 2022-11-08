@@ -425,4 +425,14 @@
 - figured out title variable problem
 - was missing the variable. added it
 - app works
-- push to github befor continuing
+- push to github before continuing
+
+0857
+- pushed to repo
+- now continue
+
+0918
+- added the post method
+- no builf=d errors
+- but need to update the category repository
+- first oush to repo then continue

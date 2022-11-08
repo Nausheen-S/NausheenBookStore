@@ -25,7 +25,7 @@ namespace NausheenBooks.DataAccess.Repository
             if(objFromDb != null)
             {
                 objFromDb.CategoryName = category.CategoryName;
-                _db.SaveChanges();
+                /*_db.SaveChanges();*/ //removed after adding void save in unit of work
             }
         }
     }

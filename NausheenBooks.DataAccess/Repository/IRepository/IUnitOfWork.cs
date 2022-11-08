@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NausheenBooks.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,5 +11,7 @@ namespace NausheenBooks.DataAccess.Repository.IRepository
         ICategoryRepository Category { get; }
 
         ISP_Call SP_Call { get; }
+
+        void Save();
     }
 }
