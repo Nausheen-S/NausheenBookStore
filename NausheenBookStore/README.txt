@@ -463,3 +463,8 @@
 - still cannot add categories though
 - need to check that, looks like code missing in respository interface implementation
 - will push to github and also update the links to tastr and datatable
+
+0955
+- updated links
+- build and test app
+- push to repo
