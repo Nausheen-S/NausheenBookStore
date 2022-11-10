@@ -491,3 +491,10 @@
 - ppt says refer to file
 - file is not present
 - most likely just need to add those implementations
+
+1129
+- got the file, will now try again
+
+1142
+- tried to run, get new error, cannot access db
+- first push to github
