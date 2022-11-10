@@ -10959,3 +10959,18 @@ textarea.form-control-lg {
 .alert-dark {
   background-color: #303030;
 }
+
+
+table.dataTable tbody tr td {
+    color: black!important;
+}
+
+.sorting_1 {
+    color: black;
+}
+
+label,
+.dataTables_info,
+.paginate_button {
+    color: white!important;
+}

@@ -528,3 +528,11 @@
 - order was wrong
 - still have an ajax error
 - need to figure it out
+
+1855
+- got the datatables working
+- the url was wrong, corrected it in category.js file
+- also changed css for datatables
+- app works fine
+- push everything to repo
+- end of part 2
