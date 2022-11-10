@@ -517,3 +517,8 @@
 - need to check that
 - otherwise, end of part 2
 - push to github
+
+1328
+- categories added, had to refresh page
+- now everything works
+- end of part 2
