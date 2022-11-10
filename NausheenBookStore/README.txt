@@ -478,3 +478,16 @@
 - get a not implemented exception
 - will email Andrew the problem and ask for solutions
 - now push this to github
+
+2022-11-10
+1033
+- cloned repo into lab system
+- still have issue with creation
+- need to test that
+
+1050
+- I guess I figured the problem.
+- Repository.cs methods are not implemented.
+- ppt says refer to file
+- file is not present
+- most likely just need to add those implementations
