@@ -521,4 +521,10 @@
 1328
 - categories added, had to refresh page
 - now everything works
-- end of part 2
+
+
+1825
+- figured out why datatables were not shown
+- order was wrong
+- still have an ajax error
+- need to figure it out

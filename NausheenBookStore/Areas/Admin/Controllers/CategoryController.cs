@@ -39,7 +39,7 @@ namespace NausheenBookStore.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            return View(category); //note the argument is added
+            return View(); //note the argument is added
         }
 
         //http post here

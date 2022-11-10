@@ -10,10 +10,10 @@ function loadDataTable() {
             "url": "Admin/Category/GetAll"
         },
         "columns": [
-            { "data": "name", "width": "60%" },
+            { "data": "categoryName", "width": "60%" },
             {
-                "data": "id",
-                "reader": function (data) {
+                "data": "categoryId",
+                "render": function (data) {
                     return `
                     <div class="text-center">
                         <a href="Admin/Category/Upsert/${data}" class="btn btn-success text-white" style="cursor: pointer">
