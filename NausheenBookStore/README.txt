@@ -498,3 +498,9 @@
 1142
 - tried to run, get new error, cannot access db
 - first push to github
+
+1147
+- looks like it works in college system
+- but categories are not shown
+- check that
+- push to github
