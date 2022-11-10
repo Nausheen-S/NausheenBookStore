@@ -504,3 +504,16 @@
 - but categories are not shown
 - check that
 - push to github
+
+1232
+- looks like repo file works now
+- added some categories
+- need to check db for records
+- cloned repo again as well and updated database just in case
+- now build and then check db
+
+1326
+- everything works, but cannot view categories added.
+- need to check that
+- otherwise, end of part 2
+- push to github
