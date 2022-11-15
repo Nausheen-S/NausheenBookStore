@@ -536,3 +536,11 @@
 - app works fine
 - push everything to repo
 - end of part 2
+
+2022-11-15
+1004
+- pulled everything from db
+- updated db
+- will build and run
+- all works
+- part 2 ready for assessment
