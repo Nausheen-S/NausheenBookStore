@@ -25,7 +25,7 @@ namespace NausheenBooks.DataAccess.Repository
             if (objFromDb != null)
             {
                 objFromDb.CoverTypeName = covertype.CoverTypeName;
-                _db.SaveChanges(); //removed after adding void save in unit of work
+                /*_db.SaveChanges();*/ //removed after adding void save in unit of work
             }
         }
     }
