@@ -544,3 +544,16 @@
 - will build and run
 - all works
 - part 2 ready for assessment
+
+2022-11-17
+2044
+- Starting part 3.1
+- pulled he app from repo
+- build and clean and begin
+
+2103
+- added migration (20221118020223 - covertyoe added to db)
+
+2107
+- added db context and updated db
+- will now push to GitHub and continue

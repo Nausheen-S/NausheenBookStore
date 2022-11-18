@@ -16,5 +16,8 @@ namespace NausheenBookStore.DataAccess.Data
         }
         //adding new dbcontext for categories
         public DbSet<Category> Categories { get; set; }
+
+        //adding new dbcontext for cover types
+        public DbSet<CoverType> CoverTypes { get; set; }
     }
 }
