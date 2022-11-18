@@ -557,3 +557,8 @@
 2107
 - added db context and updated db
 - will now push to GitHub and continue
+
+2130
+- added repository for cover type
+- built app, no errors
+- push to repo
