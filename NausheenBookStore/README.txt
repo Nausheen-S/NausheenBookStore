@@ -608,3 +608,9 @@
 - built and tested app
 - works fine
 - push to repo
+
+1428
+- added repository for product
+- built the app
+- no errors
+- push to repo
