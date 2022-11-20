@@ -9,7 +9,7 @@ using NausheenBooks.Models; //added for upsert
 
 namespace NausheenBookStore.Areas.Admin.Controllers
 {
-    //add are
+    //add area
     [Area("Admin")]
     public class CategoryController : Controller
     {

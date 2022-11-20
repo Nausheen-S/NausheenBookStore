@@ -567,3 +567,14 @@
 - added to unit of work
 - will now push to guthub
 - need to start with add controller
+
+2022-11-19
+2007
+- starting work again
+- build app and continue
+
+2049
+- added controller and view for cover type
+- added link in nav
+- app works
+- push to repo
