@@ -588,3 +588,23 @@
 - completed crud for cover type
 - built the app
 - tested it. all works well
+
+1357
+- lost products db due to some error.
+- rolled back and started
+- starting work on products  - 3.2 
+- built app, no errors
+ - now begin
+
+1407
+- added products model and updated db
+- 20221120190514_addProductToDb
+
+1410
+- added validation
+- 20221120190944_addProductValidation
+
+1414
+- built and tested app
+- works fine
+- push to repo
