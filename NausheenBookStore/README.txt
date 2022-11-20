@@ -578,3 +578,13 @@
 - added link in nav
 - app works
 - push to repo
+
+2022-11-20
+1222
+- starting work again
+- build app and begin
+
+1249
+- completed crud for cover type
+- built the app
+- tested it. all works well

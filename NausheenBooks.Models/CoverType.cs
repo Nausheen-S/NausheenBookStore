@@ -10,7 +10,7 @@ namespace NausheenBooks.Models
         [Key]
         public int CoverTypeId { get; set; }
 
-        [Display(Name = "COver Type Name")]
+        [Display(Name = "Cover Type Name")]
         [Required]
         [MaxLength(50)]
         public string CoverTypeName { get; set; }

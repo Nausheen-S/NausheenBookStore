@@ -1,0 +1,50 @@
+﻿@model NausheenBooks.Models.CoverType;
+@*add reference*@
+@{
+    ViewData["Title"] = "Upsert";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var title = "Create Cover Type";
+}
+
+<form method="post">
+    <div class="row p-3 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @if (Model.CoverTypeId != 0)
+        {
+            title = "Edit Cover Type";
+        }
+        <div class="col-12 border-bottom">
+            <h2 class="text-primary">@title</h2>
+        </div>
+        <div class="col-8 pt-4">
+            <div class="form-group row">
+                <div class="col-4">
+                    <!--adding labels-->
+                    <label asp-for="CoverTypeName"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="CoverTypeName" class="form-control" />
+                    <span asp-validation-for="CoverTypeName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    @if (Model.CoverTypeId != 0)
+                    {
+                        <partial name="_EditAndBackToListButton" model="Model.CoverTypeId" />
+                    }
+                    else
+                    {
+                        <partial name="_CreateAndBackToListButton" />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@*adding script for validation*@
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
