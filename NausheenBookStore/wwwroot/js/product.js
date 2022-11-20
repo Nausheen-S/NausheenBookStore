@@ -10,16 +10,20 @@ function loadDataTable() {
             "url": "Product/GetAll" //changed url
         },
         "columns": [
-            { "data": "categoryName", "width": "60%" },
+            { "data": "title", "width": "15%" },
+            { "data": "isbn", "width": "15%" },
+            { "data": "price", "width": "15%" },
+            { "data": "author", "width": "15%" },
+            { "data": "category.CategoryName", "width": "15%" },
             {
-                "data": "categoryId",
+                "data": "id",
                 "render": function (data) {
                     return `
                     <div class="text-center">
-                        <a href="Category/Upsert/${data}" class="btn btn-success text-dark" style="cursor: pointer">
+                        <a href="Product/Upsert/${data}" class="btn btn-success text-dark" style="cursor: pointer">
                             <i class="fas fa-edit"></i>&nbsp;
                         </a>
-                        <a onclick= Delete("Category/Delete/${data}") class="btn btn-danger text-dark" style="cursor: pointer">
+                        <a onclick= Delete("Product/Delete/${data}") class="btn btn-danger text-dark" style="cursor: pointer">
                             <i class="fas fa-trash-alt"></i>&nbsp;
                         </a>
                     </div>`;

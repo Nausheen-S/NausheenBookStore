@@ -623,3 +623,9 @@
 - added views for product
 - now need to update the js for product
 - first push to repo
+
+1823
+- created product CRUD
+- still get an exception
+- will check in next part
+- for now push to repo
