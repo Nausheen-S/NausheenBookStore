@@ -614,3 +614,12 @@
 - built the app
 - no errors
 - push to repo
+
+1430
+- pushed to repo
+- now start 3.2 part 2
+
+1651
+- added views for product
+- now need to update the js for product
+- first push to repo
