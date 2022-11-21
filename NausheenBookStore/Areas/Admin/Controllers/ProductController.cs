@@ -62,14 +62,14 @@ namespace NausheenBookStore.Areas.Admin.Controllers
 
 
         //http post here
-       /* [HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
 
         public IActionResult Upsert(Product product)
         {
             if (ModelState.IsValid)
             {
-                if (product.Id == 0)
+                if (product.ProductId == 0)
                 {
                     _unitOfWork.Product.Add(product);
                 }
@@ -82,7 +82,7 @@ namespace NausheenBookStore.Areas.Admin.Controllers
             }
             return View(product);
         }
-*/
+
         //API Calls here
         [HttpGet]
 

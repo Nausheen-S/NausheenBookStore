@@ -640,3 +640,11 @@
 - also added tiny.cloud
 - app works, but exception still remians
 - first push to repo
+
+2002
+- completed part 3 for part 3.2
+- the ppt says continue if exception occurs
+- the app works, the data is getting added to db
+- will confirm if the exception stays in class
+- now push to repo
+- end of part 3
