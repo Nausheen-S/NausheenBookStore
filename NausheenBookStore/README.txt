@@ -629,3 +629,14 @@
 - still get an exception
 - will check in next part
 - for now push to repo
+
+1825
+- pushed to repo
+- now starting part 3.2 part 3
+
+
+1901
+- created the upsert view
+- also added tiny.cloud
+- app works, but exception still remians
+- first push to repo
