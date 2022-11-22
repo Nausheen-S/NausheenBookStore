@@ -88,7 +88,7 @@ namespace NausheenBookStore.Areas.Admin.Controllers
 
         public IActionResult GetAll()
         {
-            var allObj = _unitOfWork.Product.GetAll(includeProperties:"Category, CoverType");
+            var allObj = _unitOfWork.Product.GetAll(includeProperties:"Category,CoverType");//no space
             return Json(new { data = allObj });
         }
 

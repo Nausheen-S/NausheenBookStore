@@ -648,3 +648,16 @@
 - will confirm if the exception stays in class
 - now push to repo
 - end of part 3
+
+2022-11-22
+1033
+- pulled repo to college system
+- clean and build
+- update db
+- also ask doubts with exception
+
+1122
+- the exception was due to extra space in include properties
+- the create works
+- push to repo
+- end of part 3
