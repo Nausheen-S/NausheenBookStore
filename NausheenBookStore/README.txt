@@ -661,3 +661,16 @@
 - the create works
 - push to repo
 - end of part 3
+
+2022-11-24
+1003
+- pulled changes from repo
+- clean and build app
+- update db
+- test app
+
+1006
+- tested app, all good
+- push to repo
+- end of part 3.3
+- ready for assessment
