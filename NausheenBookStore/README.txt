@@ -697,3 +697,9 @@
 - created a new js file for product to route correctly from home page
 - tested app, works fine
 - push to repo
+
+2256
+- made a mistake in js file, named id wrong
+- corrected it, now edit and delete work
+- checked app, works fine
+- now push to repo
