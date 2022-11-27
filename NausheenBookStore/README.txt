@@ -674,3 +674,18 @@
 - push to repo
 - end of part 3.3
 - ready for assessment
+
+2022-11-26
+2052
+- pulled changes
+- build and run app
+- begin part 4
+
+2130
+- checked all folders against given repo
+- made changes to controller, the upsert post needed img info
+- also added image
+- tested app to add image
+- all works good
+- can now add products as well
+- will now push to repo before continuing

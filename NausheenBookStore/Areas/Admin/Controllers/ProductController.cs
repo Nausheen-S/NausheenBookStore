@@ -9,6 +9,7 @@ using NausheenBooks.Models; //added for upsert
 using Microsoft.AspNetCore.Hosting; //added new
 using NausheenBooks.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.IO;
 
 namespace NausheenBookStore.Areas.Admin.Controllers
 {
@@ -34,15 +35,15 @@ namespace NausheenBookStore.Areas.Admin.Controllers
             ProductVM productVM = new ProductVM()
             {
                 Product = new Product(),
-                CategoryList = _unitOfWork.Category.GetAll().Select(id => new SelectListItem
+                CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
                 {
-                    Text = id.CategoryName,
-                    Value = id.CategoryId.ToString()
+                    Text = i.CategoryName,
+                    Value = i.CategoryId.ToString()
                 }),
-                CoverTypeList = _unitOfWork.CoverType.GetAll().Select(id => new SelectListItem
+                CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
                 {
-                    Text = id.CoverTypeName,
-                    Value = id.CoverTypeId.ToString()
+                    Text = i.CoverTypeName,
+                    Value = i.CoverTypeId.ToString()
                 }),
 
             };
@@ -65,22 +66,72 @@ namespace NausheenBookStore.Areas.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        public IActionResult Upsert(Product product)
+        public IActionResult Upsert(ProductVM productVM)
         {
             if (ModelState.IsValid)
             {
-                if (product.ProductId == 0)
+                string webRootPath = _hostEnvironment.WebRootPath;
+                var files = HttpContext.Request.Form.Files;
+                if (files.Count > 0)
                 {
-                    _unitOfWork.Product.Add(product);
+                    string fileName = Guid.NewGuid().ToString();
+                    var uploads = Path.Combine(webRootPath, @"images\products");
+                    var extension = Path.GetExtension(files[0].FileName);
+
+                    if (productVM.Product.ImageUrl != null)
+                    {
+                        // this is an edit and we need to remove old image
+                        var imagePath = Path.Combine(webRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+                        if (System.IO.File.Exists(imagePath))
+                        {
+                            System.IO.File.Delete(imagePath);
+                        }
+                    }
+                    using (var filesStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                    {
+                        files[0].CopyTo(filesStreams);
+                    }
+                    productVM.Product.ImageUrl = @"\images\products\" + fileName + extension;
                 }
                 else
                 {
-                    _unitOfWork.Product.Update(product);
+                    // update when they do not change the image
+                    if (productVM.Product.ProductId != 0)
+                    {
+                        Product objFromDb = _unitOfWork.Product.Get(productVM.Product.ProductId);
+                        productVM.Product.ImageUrl = objFromDb.ImageUrl;
+                    }
+                }
+
+                if (productVM.Product.ProductId == 0)
+                {
+                    _unitOfWork.Product.Add(productVM.Product);
+                }
+                else
+                {
+                    _unitOfWork.Product.Update(productVM.Product);
                 }
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
-            return View(product);
+            else
+            {
+                productVM.CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.CategoryName,
+                    Value = i.CategoryId.ToString()
+                });
+                productVM.CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.CoverTypeName,
+                        Value = i.CoverTypeId.ToString()
+                });
+                if (productVM.Product.ProductId != 0)
+                {
+                    productVM.Product = _unitOfWork.Product.Get(productVM.Product.ProductId);
+                }
+            }
+            return View(productVM);
         }
 
         //API Calls here
@@ -101,6 +152,12 @@ namespace NausheenBookStore.Areas.Admin.Controllers
             if (objFromDb == null)
             {
                 return Json(new { success = false, message = "Error while Deleting" });
+            }
+            string webRootPath = _hostEnvironment.WebRootPath;
+            var imagePath = Path.Combine(webRootPath, objFromDb.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(imagePath))
+            {
+                System.IO.File.Delete(imagePath);
             }
             _unitOfWork.Product.Remove(objFromDb);
             _unitOfWork.Save();
