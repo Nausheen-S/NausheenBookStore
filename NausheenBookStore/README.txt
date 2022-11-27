@@ -689,3 +689,11 @@
 - all works good
 - can now add products as well
 - will now push to repo before continuing
+
+2151
+- updated the navigation and home page such that product db is displayed
+- only display product
+- no add, that is in specific route
+- created a new js file for product to route correctly from home page
+- tested app, works fine
+- push to repo
