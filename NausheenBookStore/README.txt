@@ -703,3 +703,15 @@
 - corrected it, now edit and delete work
 - checked app, works fine
 - now push to repo
+
+2022-29-11
+1013
+- pulled repo to class sys
+- build app
+- update app
+- test app
+
+1039
+- everything works
+- also added 3 new products
+- end of part 4
