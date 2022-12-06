@@ -723,3 +723,14 @@
 - also added a new column to display images
 - now push to repo
 - end of part 4
+
+2022-12-06
+0808
+- cloned app to college system
+- update db
+- test app
+
+0902
+- everything works fine
+- end of part 4
+- ready for assessment

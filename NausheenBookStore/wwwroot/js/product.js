@@ -19,7 +19,7 @@ function loadDataTable() {
                 "data": "imageUrl", "width": "15%",
                 "render": function (data) {
                     console.log(data)
-                    return `<img src="${data}" width="40px">`;
+                    return `<img src="${data}" width="140px">`;
                 }
             },
             {
