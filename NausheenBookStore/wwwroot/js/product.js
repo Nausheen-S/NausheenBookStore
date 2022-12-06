@@ -16,9 +16,16 @@ function loadDataTable() {
             { "data": "author", "width": "15%" },
             { "data": "category.categoryName", "width": "15%" },
             {
-                "data": "productId",
+                "data": "imageUrl", "width": "15%",
                 "render": function (data) {
                     console.log(data)
+                    return `<img src="${data}" width="40px">`;
+                }
+            },
+            {
+                "data": "productId",
+                "render": function (data) {
+                    
                     return `
                     <div class="text-center">
                         <a href="Product/Upsert/${data}" class="btn btn-success text-dark" style="cursor: pointer">

@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Hosting; //added new
 using NausheenBooks.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.IO;
+using Microsoft.AspNetCore.Http;
 
 namespace NausheenBookStore.Areas.Admin.Controllers
 {
@@ -66,7 +67,7 @@ namespace NausheenBookStore.Areas.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        public IActionResult Upsert(ProductVM productVM)
+        public IActionResult Upsert(ProductVM productVM, IFormFile file)
         {
             if (ModelState.IsValid)
             {

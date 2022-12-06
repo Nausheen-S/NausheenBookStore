@@ -52,6 +52,7 @@
                 </div>
                 <div class="col-8">
                     <textarea asp-for="Product.Description" class="form-control"></textarea>
+                    <span asp-validation-for="Product.Author" class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group row">
@@ -114,7 +115,7 @@
         @if (Model.Product.ProductId != 0)
         {
             <div class="col-3 offset-1 pt-4">
-                <img src="@Model.Product.ImageUrl" width="100%" style="border-radius:5px; border:1px solid #bbb9b9" />
+                <img src="@Model.Product.ImageUrl"  style="border-radius:5px; border:1px solid #bbb9b9" />
             </div>
         }
     </div>
@@ -122,12 +123,13 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
-    <script src="https://cdn.tiny.cloud/1/gwuddmfh1sx0ex7i8rcbwmouchjp7xd523j7g2y65qg1y877/tinymce/6/tinymce.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/gwuddmfh1sx0ex7i8rcbwmouchjp7xd523j7g2y65qg1y877/tinymce/5/tinymce.min.js"></script>
     <script>
         tinymce.init({
             selector: 'textarea',
             plugins: 'lists',
-            menubar: 'file edit format'
+            menubar: 'file edit format',
+            forced_root_block: ""
         });
 
         function validateInput() {

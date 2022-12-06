@@ -715,3 +715,11 @@
 - everything works
 - also added 3 new products
 - end of part 4
+
+2022-12-05
+2035
+- tested app to check everything
+- all works well
+- also added a new column to display images
+- now push to repo
+- end of part 4

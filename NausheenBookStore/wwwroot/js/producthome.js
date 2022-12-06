@@ -16,6 +16,13 @@ function loadDataTable() {
             { "data": "author", "width": "15%" },
             { "data": "category.categoryName", "width": "15%" },
             {
+                "data": "imageUrl", "width": "15%",
+                "render": function (data) {
+                    console.log(data)
+                    return `<img src="${data}" width="40px">`;
+                }
+            },
+            {
                 "data": "productId",
                 "render": function (data) {
                     return `
