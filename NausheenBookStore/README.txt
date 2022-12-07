@@ -734,3 +734,15 @@
 - everything works fine
 - end of part 4
 - ready for assessment
+
+2022-12-07
+1429
+- Part 4 assessed, now need to submit for part 5
+- cloned repo
+- update the db and do a final test of app
+
+1431
+- tested the app. everything works well.
+- cannot deploy on Azure as I have maxed out the credit.
+- end of part 5
+- submit the project for assessment
